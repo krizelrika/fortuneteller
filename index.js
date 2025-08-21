@@ -63,9 +63,9 @@ const fortuneOrb = document.getElementById('fortuneOrb');
 const homeButton = document.getElementById('homeButton');
 const fortuneText = document.getElementById('fortuneText');
 
-/*// Initialize
+// Initialize
 createStars();
-createSparkles();*/
+/*createSparkles();*/
 
 // Orb click handler
 fortuneOrb.addEventListener('click', function() {
