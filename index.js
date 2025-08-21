@@ -13,7 +13,7 @@ function createStars() {
     }
 }
 
-// Create sparkles around the orb
+/* Create sparkles around the orb
 function createSparkles() {
     const sparklesContainer = document.getElementById('sparkles');
     const sparkleSymbols = ['✨', '⭐', '💫', '🌟'];
@@ -35,7 +35,7 @@ function createSparkles() {
         sparklesContainer.appendChild(sparkle);
     }
 }
-
+*/
 // Fortune messages
 const fortunes = [
     "A new opportunity will present itself within the next seven days. Be ready to embrace change.",
@@ -63,9 +63,9 @@ const fortuneOrb = document.getElementById('fortuneOrb');
 const homeButton = document.getElementById('homeButton');
 const fortuneText = document.getElementById('fortuneText');
 
-// Initialize
+/*// Initialize
 createStars();
-createSparkles();
+createSparkles();*/
 
 // Orb click handler
 fortuneOrb.addEventListener('click', function() {
