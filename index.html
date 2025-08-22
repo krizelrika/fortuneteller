@@ -11,40 +11,49 @@
 </head>
 <body>
     <div class="stars" id="stars"></div>
+    <div class="overlay-container">
+            <div class="svg-container">
+                <img src="./images/overlay1.svg" id="overlay1">
+                <img src="./images/overlay2.svg" id="overlay2">
+            </div>
+        </div>
+    <div class="overall-container">
+        
     
-    <div class="container">
-        <!-- Home Screen -->
-        <div id="homeScreen">
-            <div class="title-container">
-                <h1 class="title">Cosmic Whispers</h1>
-                <div class="message-container">
-                     <p class="message1">Peer into the cosmic veil and discover what the</p>
-                     <p class="message1">universe has in store for you</p>
+        <div class="web-container">
+            <!-- Home Screen -->
+            <div id="homeScreen">
+                <div class="title-container">
+                    <h1 class="title">Cosmic Whispers</h1>
+                    <div class="message-container">
+                        <p class="message1">Peer into the cosmic veil and discover what the</p>
+                        <p class="message1">universe has in store for you</p>
+                    </div>
                 </div>
-            </div>
-            <div class="orb-container">
-                <div class="orb" id="fortuneOrb">
-                    <div class="sparkles" id="sparkles"></div>
+                <div class="orb-container">
+                    <div class="orb" id="fortuneOrb">
+                        <div class="sparkles" id="sparkles"></div>
+                    </div>
                 </div>
+                <p class="instruction">Click the orb to reveal your fortune</p>
+                <p class="finmessage">The cosmos is never silent. The stars are always looking out for you. Connect with the orb and discover their message for your day.</p>
             </div>
-            <p class="instruction">Click the orb to reveal your fortune</p>
-            <p class="finmessage">The cosmos is never silent. The stars are always looking out for you. Connect with the orb and discover their message for your day.</p>
-        </div>
-        
-        <!-- Loading Screen -->
-        <div class="loading-screen" id="loadingScreen">
-            <div class="loading-orb"></div>
-            <div class="loading-text">Consulting the cosmic energies...</div>
-        </div>
-        
-        <!-- Fortune Screen -->
-        <div class="fortune-screen" id="fortuneScreen">
-            <h2 class="title" style="font-size: 2rem;">Your Fortune</h2>
-            <div class="fortune-card">
-                <div class="fortune-text" id="fortuneText"></div>
-                <div class="fortune-signature">— The Mystic Orb</div>
+            
+            <!-- Loading Screen -->
+            <div class="loading-screen" id="loadingScreen">
+                <div class="loading-orb"></div>
+                <div class="loading-text">Consulting the stars...</div>
             </div>
-            <button class="home-button" id="homeButton">Return to Orb</button>
+            
+            <!-- Fortune Screen -->
+            <div class="fortune-screen" id="fortuneScreen">
+                <h2 class="title" style="font-size: 2rem;">Your Fortune</h2>
+                <div class="fortune-card">
+                    <div class="fortune-text" id="fortuneText"></div>
+                    <div class="fortune-signature">— The Mystic Orb</div>
+                </div>
+                <button class="home-button" id="homeButton">Return to Orb</button>
+            </div>
         </div>
     </div>
 </body>
