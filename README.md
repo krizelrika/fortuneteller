@@ -4,11 +4,11 @@ This is a personal project created by me, Krizel.
 The original UI/UX is designed my sister.
 
 ## Features
-- Random Fortune Telling
+- Random Fortune Telling  
     There is a random fortune telling function within the code.
-- Loading screen
+- Loading screen  
     The loading screen is just randomly generated timeout.
-- Home screen
+- Home screen  
     The orb should be clicked to generate the random fortune.
 
 ## Project Introduction
