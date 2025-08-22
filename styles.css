@@ -149,8 +149,9 @@ p {
     0%, 100% { opacity: 0.3; transform: scale(1); }
     50% { opacity: 0.8; transform: scale(1.1); }
 }
-/*
+
 .sparkles {
+    z-index: 3;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -160,6 +161,7 @@ p {
 }
 
 .sparkle {
+    z-index: 2;
     position: absolute;
     color: #ffd700;
     font-size: 1.5rem;
@@ -171,11 +173,11 @@ p {
     0% { opacity: 0; transform: translate(-50%, -50%) scale(0) rotate(0deg); }
     50% { opacity: 1; transform: translate(-50%, -50%) scale(1) rotate(180deg); }
     100% { opacity: 0; transform: translate(-50%, -50%) scale(0) rotate(360deg); }
-}*/
+}
 
 .instruction {
     color: whitesmoke;
-    font-size: 12px;
+    font-size: 14px;
     opacity: 0.8;
 }
 
@@ -196,8 +198,9 @@ p {
 }
 
 .loading-orb {
-    width: 150px;
-    height: 150px;
+    z-index: 3;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.3), rgba(138, 43, 226, 0.8), rgba(75, 0, 130, 1));
     animation: pulse 1.5s ease-in-out infinite;
@@ -211,9 +214,11 @@ p {
 }
 
 .loading-text {
-    color: #ffd700;
-    font-size: 1.5rem;
-    animation: fadeInOut 2s ease-in-out infinite;
+    z-index: 3;
+    color: #E9D4FF;
+    font-size: 16px;
+    /*animation: fadeInOut 2s ease-in-out infinite;*/
+    font-family: "DM Sans", serif;
 }
 
 @keyframes fadeInOut {
@@ -230,6 +235,7 @@ p {
 }
 
 .fortune-card {
+    z-index: 3;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 215, 0, 0.3);
@@ -240,6 +246,7 @@ p {
 }
 
 .fortune-text {
+    z-index: 3;
     color: #e6e6fa;
     font-size: 1.3rem;
     line-height: 1.6;
