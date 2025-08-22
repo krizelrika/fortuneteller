@@ -217,7 +217,6 @@ p {
     z-index: 3;
     color: #E9D4FF;
     font-size: 16px;
-    /*animation: fadeInOut 2s ease-in-out infinite;*/
     font-family: "DM Sans", serif;
 }
 
@@ -240,21 +239,51 @@ p {
 }
 
 .fortune-card {
-    z-index: 1;
-    background:
-    linear-gradient(-45deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0)) /* light sheen */
-    rgba(255, 255, 255, 0.01); /* main frosted fill */
-    backdrop-filter: blur(25px) saturate(150%);
-    -webkit-backdrop-filter: blur(25px) saturate(150%);
-    box-shadow:
-        0 16px 64px rgba(0, 0, 0, 0.25),
-        2px 2px 8px rgba(255, 0, 0, 0.2),
-    -2px -2px 8px rgba(0, 200, 255, 0.2);
-    border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 12px;
-    max-width: 400px;
-    opacity: 0.8;
+  padding: 12px;
+  max-width: 400px;
+  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 0px 0px rgba(255, 255, 255, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.fortune-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+}
+
+.fortune-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
 }
 
 .fortune-text {
@@ -267,36 +296,59 @@ p {
     opacity: 1;
 }
 
-/*.fortune-signature {
-    color: #ffd700;
-    font-size: 1rem;
-    font-style: italic;
-    text-align: right;
-}*/
-
 .home-button {
     border-radius: 100px;
     padding: 12px 32px;
     color: white;
     font-weight: 600;
+    background: linear-gradient(120deg,rgba(110, 17, 176, 1) 0%, rgba(246, 51, 154, 0.4) 50%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-
-    background:
-        linear-gradient(120deg,rgba(110, 17, 176, 1) 0%, rgba(246, 51, 154, 0.2) 50%);
-
-    backdrop-filter: blur(4px) saturate(130%);
-    -webkit-backdrop-filter: blur(4px) saturate(130%);
-
-    box-shadow:
-        0 4px 20px rgba(0, 0, 0, 0.25),
-        1px 1px 6px rgba(255, 0, 0, 0.2),
-        -1px -1px 6px rgba(0, 200, 255, 0.2);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 0px 0px rgba(255, 255, 255, 0);
+    position: relative;
+    overflow: hidden;
 
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: "DM Sans", serif;
     font-size: 16px;
     z-index: 3;
+}
+
+.home-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+}
+
+.home-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
 }
 
 .home-button:hover {
