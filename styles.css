@@ -234,41 +234,49 @@ p {
     z-index: 3;
 }
 
+#fortuneTitle {
+    font-family: "DM Sans", serif;
+    color: whitesmoke;
+}
+
 .fortune-card {
-    z-index: 3;
+    z-index: 1;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 215, 0, 0.3);
+    -webkit-backdrop-filter: blur(10px); 
     border-radius: 20px;
     padding: 2rem;
     max-width: 400px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    opacity: 0.8;
 }
 
 .fortune-text {
     z-index: 3;
     color: #e6e6fa;
-    font-size: 1.3rem;
+    font-size: 16px;
     line-height: 1.6;
     text-align: center;
     margin-bottom: 1rem;
+    font-family: "DM Sans", serif;
+    opacity: 1;
 }
 
-.fortune-signature {
+/*.fortune-signature {
     color: #ffd700;
     font-size: 1rem;
     font-style: italic;
     text-align: right;
-}
+}*/
 
 .home-button {
-    background: linear-gradient(45deg, #8a2be2, #4b0082);
+    background: linear-gradient(120deg,rgba(110, 17, 176, 1) 0%, rgba(246, 51, 154, 1) 50%);
     color: white;
     border: none;
     padding: 12px 30px;
     border-radius: 25px;
-    font-family: 'Cinzel', serif;
-    font-size: 1.1rem;
+    font-family: "DM Sans", serif;
+    font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(138, 43, 226, 0.4);
