@@ -93,7 +93,6 @@ body {
     font-weight: 600;
     margin-bottom: 10px;
     text-shadow: 0 0 20px rgba(110, 17, 176, 1);
-    animation: glow 2s ease-in-out infinite alternate;
     background-image: linear-gradient(307deg,rgba(233, 212, 255, 1) 0%, rgba(252, 206, 232, 1) 50%, rgba(190, 223, 255, 1) 100%);
      -webkit-background-clip: text;
     background-clip: text;
@@ -137,17 +136,6 @@ p {
 .orb:hover {
     transform: scale(1.09);
     box-shadow: 0 0 15px rgba(255, 255, 255, 1); 
-}
-
-/*.orb::before {
-    content: '';
-    position: absolute;
-    animation: shimmer 3s ease-in-out infinite;
-} */
-
-@keyframes shimmer {
-    0%, 100% { opacity: 0.3; transform: scale(1); }
-    50% { opacity: 0.8; transform: scale(1.1); }
 }
 
 .sparkles {
@@ -235,13 +223,19 @@ p {
 
 #fortuneTitle {
     font-family: "DM Sans", serif;
-    color: whitesmoke;
+    color: white;
+    font-size: 24px;
+    z-index: 10;
+    gap: 32px;
 }
 
 .fortune-card {
   padding: 12px;
   max-width: 400px;
   opacity: 0.8;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -256,6 +250,11 @@ p {
   overflow: hidden;
 }
 
+#starIcon {
+    align-self: flex-start;
+    width: 32px;
+    height: 32px;
+}
 .fortune-card::before {
   content: '';
   position: absolute;
@@ -294,6 +293,7 @@ p {
     text-align: center;
     font-family: "DM Sans", serif;
     opacity: 1;
+    text-align: left;
 }
 
 .home-button {
